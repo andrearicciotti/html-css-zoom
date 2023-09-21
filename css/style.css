@@ -21,29 +21,43 @@ i {
 
 
 /* MAIN */
+/* FIXED TOP RIGHT MENU */
+.top-right-options {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.top-right-options span {
+    display: inline-block;
+    background-color: rgb(71, 68, 68);
+    color: white;
+    padding: .4rem .1rem .4rem .5rem;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+/* CARDS */
 .wrapper {
     display: flex;
     width: 100%;
     height: 100vh;
-    border: 60px solid black;
-    justify-content: space-around;
+    border: 120px solid black;
+    justify-content: space-between;
     align-items: center;
+    gap: .5rem;
 }
 
 .col {
-    width: calc(96% / 7);
+    width: calc(98% / 7);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: .5rem;
-    /* debug */
-    /* border: 2px solid lightblue; */
 }
 
 .row {
-    height: calc(96% / 5);
-    /* debug */
-    /* border: 1px solid blue; */
+    height: calc(98% / 5);
 }
 
 .cards {
@@ -59,7 +73,6 @@ i {
     padding: .2rem .6rem .2rem .2rem;
     color: white;
 }
-
 
 /* NAVIGATION */
 .navigation {
