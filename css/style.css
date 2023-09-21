@@ -15,16 +15,6 @@ img {
     display: block;
 }
 
-span {
-    display: inline-block;
-    color: white;
-    background-color: rgba(0, 0, 0, .3);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: .3rem .6rem .3rem .3rem;
-}
-
 i {
     padding-right: .4rem;
 }
@@ -35,25 +25,89 @@ i {
     display: flex;
     width: 100%;
     height: 100vh;
-    border: 80px solid black;
+    border: 60px solid black;
     justify-content: space-around;
+    align-items: center;
 }
 
 .col {
-    width: calc(94% / 7);
+    width: calc(96% / 7);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    gap: .5rem;
     /* debug */
     /* border: 2px solid lightblue; */
 }
 
 .row {
-    height: calc(90% / 5);
+    height: calc(96% / 5);
     /* debug */
     /* border: 1px solid blue; */
 }
 
 .cards {
     position: relative;
+}
+
+.cards span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    padding: .2rem .6rem .2rem .2rem;
+    color: white;
+}
+
+
+/* NAVIGATION */
+.navigation {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(43, 42, 42);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exit {
+    color: rgba(238, 34, 34, 0.795);
+    background-color: rgb(163, 163, 163);
+}
+
+.exit, .input {
+    width: 15%;
+    text-align: center;
+}
+.input, .options, .exit {
+    line-height: 50px;
+}
+
+.options {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.options i {
+    padding-left: 1.5rem;
+}
+
+.input i {
+    padding-left: 1.2rem;
+}
+
+.navigation .fa-angle-up {
+    font-size: 0.8rem;
+    padding-right: 1.5rem;
+}
+
+.exit {
+    line-height: 70px;
+    font-size: 1.7rem;
+    border-radius: 10px  0 0 10px;
 }
