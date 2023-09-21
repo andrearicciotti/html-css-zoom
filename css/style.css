@@ -84,30 +84,48 @@ i {
     width: 15%;
     text-align: center;
 }
-.input, .options, .exit {
+.input, .options {
     line-height: 50px;
+}
+
+.exit {
+    line-height: 70px;
+}
+
+.input {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.input .icons {
+    width: 48%;
 }
 
 .options {
     flex-grow: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 2.5rem;
 }
 
 .options i {
+    width: calc(100% / 8);
+    font-size: 1.6rem;
+}
+
+.icons {
+    width: calc(100% / 8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon {
+    height: 40%;
+}
+
+.fa-angle-up {
     padding-left: 1.5rem;
-}
-
-.input i {
-    padding-left: 1.2rem;
-}
-
-.navigation .fa-angle-up {
-    font-size: 0.8rem;
-    padding-right: 1.5rem;
-}
-
-.exit {
-    line-height: 70px;
-    font-size: 1.7rem;
-    border-radius: 10px  0 0 10px;
 }
